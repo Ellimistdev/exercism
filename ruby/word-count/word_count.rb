@@ -4,7 +4,7 @@ end
 
 class Phrase
   def initialize(phrase)
-    @phrase = phrase
+    @phrase = phrase.downcase
   end
   
   def word_count
@@ -14,7 +14,7 @@ class Phrase
     
     # split on all non alphanumeric characters except "'" and all whitespace.
     @phrase.split(/[\W\s&&[^']]+/).each do |word| 
-      counts[word.downcase] += 1
+      counts[word] += 1
     end
     counts
   end
