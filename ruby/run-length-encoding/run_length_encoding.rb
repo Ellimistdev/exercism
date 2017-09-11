@@ -9,12 +9,10 @@ class RunLengthEncoding
     char = ''
     out = ""
     
-    str.scan(/./).each_with_index do |alpha, i|
+    str.chars.each do |alpha|
       count += 1
-      if str[i] != char
-        if char != ''
-          out += append_encoded(char, count)
-        end
+      if alpha != char
+        out += append_encoded(char, count) unless char == ''
         char = alpha
         count = 0     
       end
@@ -28,7 +26,7 @@ class RunLengthEncoding
     count = ""
     out = ""
     
-    str.scan(/./).each do |char|
+    str.chars.each do |char|
       # build the count string
       if char.match(/\d/)
         count += char 
@@ -49,12 +47,8 @@ class RunLengthEncoding
   private
   
   def self.append_encoded  char, count
-    out = ""
-    if count > 1
-      out += count.to_s
-    end
+    out = count > 1 ? count.to_s : ""
     out += char
-    out
   end
   
 end
