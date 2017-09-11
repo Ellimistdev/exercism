@@ -4,7 +4,7 @@ end
 
 class Binary
   def self.to_decimal num
-    raise ArgumentError if num.chars.any? { |i| !("0..1").include? i}
+    raise ArgumentError if num.chars.any? { |i| !("0..1").include? i }
     count = num.length - 1
     sum = 0
     
