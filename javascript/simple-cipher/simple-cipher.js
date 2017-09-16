@@ -8,19 +8,17 @@ function Cipher(key) {
 }
 
 Cipher.prototype.encode = function(clearText){
-  var cipherText = this.generateOutput(clearText, true);
-  return cipherText;
+  return this.generateOutput(clearText, true);
 };
 
 Cipher.prototype.decode = function(cipherText){ 
-  var clearText = this.generateOutput(cipherText, false);
-  return clearText;
+  return this.generateOutput(cipherText, false);
 };
 
 // given a string, encodes or decodes the string based on the is_encoding bit
 Cipher.prototype.generateOutput = function(input, is_encoding){
-  var output = "";
-  var shift, charCode, val;
+  var shift, charCode, val, output = "";
+  
   for (var i = 0; i < input.length; i++) {
     shift = alpha.indexOf(this.key[i % this.key.length]);
     val = (is_encoding == true) ? (input[i].charCodeAt() + shift) : (input[i].charCodeAt() - shift);
