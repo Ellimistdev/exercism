@@ -1,20 +1,13 @@
 function Bob() {}
 
 Bob.prototype.hey = function(string){
-  var out = "";
-  var prompt = string.replace(/\s/g, "");
+  var prompt = string.trim();
   
-  if (prompt === "") {
-    out = "Fine. Be that way!";
-  } else if (prompt === prompt.toUpperCase() && !prompt.match(/^[^a-zA-Z]+$/)){
-    out = "Whoa, chill out!";
-  } else if (prompt.slice(-1) === '?'){
-    out = "Sure.";
-  } else {
-    out = "Whatever.";
-  }
+  if (prompt === "") return "Fine. Be that way!";
+  if (prompt === prompt.toUpperCase() && !prompt.match(/^[^a-zA-Z]+$/)) return "Whoa, chill out!";
+  if (prompt.slice(-1) === '?') return "Sure.";
+  return "Whatever.";
   
-  return out;
 };
 
 module.exports = Bob;
