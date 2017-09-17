@@ -1,5 +1,3 @@
-var alpha = "abcdefghijklmnopqrstuvwxyz";
-
 function Pangram(input){
   this.input = input.toLowerCase();
 }
