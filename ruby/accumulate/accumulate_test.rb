@@ -7,7 +7,6 @@ class ArrayTest < Minitest::Test
   end
 
   def test_accumulate_squares
-    skip
     result = [1, 2, 3].accumulate do |number|
       number * number
     end
@@ -15,19 +14,16 @@ class ArrayTest < Minitest::Test
   end
 
   def test_accumulate_upcases
-    skip
     result = %w(hello world).accumulate(&:upcase)
     assert_equal %w(HELLO WORLD), result
   end
 
   def test_accumulate_reversed_strings
-    skip
     result = %w(the quick brown fox etc).accumulate(&:reverse)
     assert_equal %w(eht kciuq nworb xof cte), result
   end
 
   def test_accumulate_recursively
-    skip
     result = %w(a b c).accumulate do |char|
       %w(1 2 3).accumulate do |digit|
         "#{char}#{digit}"
@@ -37,13 +33,17 @@ class ArrayTest < Minitest::Test
   end
 
   def test_do_not_change_in_place
-    skip
     original = [1, 2, 3]
     copy = original.dup
     original.accumulate { |n| n * n }
     assert_equal copy, original
   end
 
+  def test_no_block_is_passed
+    result = [1, 2, 3].accumulate
+    assert_instance_of Enumerator, result
+  end
+  
   # Problems in exercism evolve over time, as we find better ways to ask
   # questions.
   # The version number refers to the version of the problem you solved,
@@ -61,7 +61,6 @@ class ArrayTest < Minitest::Test
   # http://ruby-doc.org/docs/ruby-doc-bundle/UsersGuide/rg/constants.html
 
   def test_bookkeeping
-    skip
     assert_equal 1, BookKeeping::VERSION
   end
 end
