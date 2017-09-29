@@ -1,18 +1,18 @@
 module BookKeeping
   VERSION = 1
 end
-  
+
 class Sieve
   def initialize(num)
     @num = num
   end
-  
+
   def primes
     primes = []
     values = *(2..@num)
-    
+
     # while values exist that could be prime
-    while values.size > 0 do
+    until values.empty?
       # select the next value
       i = values.first
       # this value must be prime at this point, so add it to primes
@@ -20,7 +20,7 @@ class Sieve
       # see if it is a divisor for any remaining values
       values.each do |val|
         # if it is
-        if (val % i == 0)
+        if (val % i).zero?
           # remove that value from consideration
           values.delete(val)
         end
@@ -28,5 +28,4 @@ class Sieve
     end
     primes
   end
-  
 end

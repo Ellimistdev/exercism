@@ -14,22 +14,22 @@ class ArrayTest < Minitest::Test
   end
 
   def test_accumulate_upcases
-    result = %w(hello world).accumulate(&:upcase)
-    assert_equal %w(HELLO WORLD), result
+    result = %w[hello world].accumulate(&:upcase)
+    assert_equal %w[HELLO WORLD], result
   end
 
   def test_accumulate_reversed_strings
-    result = %w(the quick brown fox etc).accumulate(&:reverse)
-    assert_equal %w(eht kciuq nworb xof cte), result
+    result = %w[the quick brown fox etc].accumulate(&:reverse)
+    assert_equal %w[eht kciuq nworb xof cte], result
   end
 
   def test_accumulate_recursively
-    result = %w(a b c).accumulate do |char|
-      %w(1 2 3).accumulate do |digit|
+    result = %w[a b c].accumulate do |char|
+      %w[1 2 3].accumulate do |digit|
         "#{char}#{digit}"
       end
     end
-    assert_equal [%w(a1 a2 a3), %w(b1 b2 b3), %w(c1 c2 c3)], result
+    assert_equal [%w[a1 a2 a3], %w[b1 b2 b3], %w[c1 c2 c3]], result
   end
 
   def test_do_not_change_in_place
@@ -43,7 +43,7 @@ class ArrayTest < Minitest::Test
     result = [1, 2, 3].accumulate
     assert_instance_of Enumerator, result
   end
-  
+
   # Problems in exercism evolve over time, as we find better ways to ask
   # questions.
   # The version number refers to the version of the problem you solved,

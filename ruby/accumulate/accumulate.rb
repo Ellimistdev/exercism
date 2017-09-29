@@ -1,15 +1,15 @@
-module BookKeeping
-  VERSION = 1
+class Array
+  def accumulate
+    return to_enum unless block_given?
+
+    new_arr = []
+    each do |entry|
+      new_arr << yield(entry)
+    end
+    new_arr
+  end
 end
 
-class Array
-  def accumulate &block
-    return to_enum unless block_given? 
-    
-    newArr = []
-    each do |entry| 
-      newArr << yield(entry)
-    end
-    newArr
-  end
+module BookKeeping
+  VERSION = 1
 end

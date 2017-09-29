@@ -4,25 +4,22 @@ end
 
 class Complement
   def self.of_dna(strand)
-    result = ""
+    result = ''
     strand.each_char do |nucleotide|
-      result += 
+      result +=
       case nucleotide
-        when 'G'
-          'C'
-        when 'C' 
-          'G'
-        when 'T'
-          'A'
-        when 'A' 
-          'U'
-        else
-          'X'
+      when 'G'
+        'C'
+      when 'C'
+        'G'
+      when 'T'
+        'A'
+      when 'A'
+        'U'
+      else
+        'X'
       end
     end
-    if result.include?('X') 
-      result = '' 
-    end
-    result
+    result.include?('X') ? result = '' : result
   end
 end

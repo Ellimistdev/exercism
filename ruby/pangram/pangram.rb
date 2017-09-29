@@ -3,9 +3,9 @@ module BookKeeping
 end
 
 class Pangram
-  def self.pangram? string
+  def self.pangram?(string)
     string = string.downcase
-    ('a'..'z').all? do |char| 
+    ('a'..'z').all? do |char|
       string.include?(char)
     end
   end

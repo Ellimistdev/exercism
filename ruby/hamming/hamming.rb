@@ -1,15 +1,11 @@
 class Hamming
-  def self.compute(strA, strB)
+  def self.compute(str_a, str_b)
     count = 0
     pos = 0
-    if (strA.length != strB.length)
-      raise ArgumentError
-    end
-    while pos < strA.length do
-      if strA[pos] != strB[pos]
-        count += 1
-      end
-    pos += 1
+    raise ArgumentError if str_a.length != str_b.length
+    while pos < str_a.length
+      count += 1 if str_a[pos] != str_b[pos]
+      pos += 1
     end
     count
   end

@@ -4,19 +4,10 @@ end
 
 class Bob
   def self.hey(str)
-    # remove all whitespace
-    str.gsub!(/\s/, "")
-    case
-    # this case must go before the str.upcase check, str.upcase on "" returns true. 
-    when str == ""
-      "Fine. Be that way!"
-    # TODO: find solution that is not true when str == ""
-    when str == str.upcase && !str.match(/^[^a-zA-Z]+$/)
-      "Whoa, chill out!"
-    when str[-1] == '?'
-      "Sure."
-    else
-      "Whatever."
-    end
+    str.gsub!(/\s/, '')
+    return 'Fine. Be that way!' if str == ''
+    return 'Whoa, chill out!' if str == str.upcase && !str.match(/^[^a-zA-Z]+$/)
+    return 'Sure.' if str[-1] == '?'
+    'Whatever.'
   end
 end
