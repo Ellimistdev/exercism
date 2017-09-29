@@ -1,10 +1,10 @@
-function Gigasecond(startDate){
+function Gigasecond(startDate) {
   this.startDate = startDate;
 }
 
-Gigasecond.prototype.date = function(){
+Gigasecond.prototype.date = function date() {
   // gets ms since 1-1-1970 and adds 1 gigasecond in ms
-  return new Date(this.startDate.getTime() + Math.pow(10, 12));
+  return new Date(this.startDate.getTime() + (10 ** 12));
 };
 
 module.exports = Gigasecond;

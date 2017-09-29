@@ -1,106 +1,96 @@
-function LinkedList(){
-  this._length = 0;
-  this._head = null;
-  this._tail = null;
-  
+function LinkedList() {
+  this.size = 0;
+  this.head = null;
+  this.tail = null;
 }
 
-LinkedList.prototype.pop = function(){
-  var tail = this._tail.data;
-  this.remove(this._length -1);
+LinkedList.prototype.pop = function pop() {
+  const tail = this.tail.data;
+  this.remove(this.size - 1);
   return tail;
 };
 
-LinkedList.prototype.push = function(data){
+LinkedList.prototype.push = function push(data) {
   this.add(data);
 };
 
-LinkedList.prototype.shift = function(){
-  var head = this._head.data;
+LinkedList.prototype.shift = function shift() {
+  const head = this.head.data;
   this.remove(0);
   return head;
 };
 
-LinkedList.prototype.unshift = function(data){
+LinkedList.prototype.unshift = function unshift(data) {
   this.add(data, 0);
 };
 
-LinkedList.prototype.count = function(){
-  return this._length;
+LinkedList.prototype.count = function count() {
+  return this.size;
 };
+// delete is reserved.
+LinkedList.prototype.delete = function del(data) {
+  let current = this.head;
+  let i = 0;
 
-LinkedList.prototype.delete = function(data){
-  var current = this._head, i = 0;
-  
-  while (current.data != data && i++ < this._length){
+  while (current.data !== data && i < this.size) {
+    i += 1;
     current = current.next;
   }
-  
   this.remove(i);
 };
 
-LinkedList.prototype.add = function(data, index){
-  var node = {
-    data: data,
-    next: null,
-    prev: null
-    };
+LinkedList.prototype.add = function add(data, index) {
+  const node = { data };
 
-  if (this._length == 0){
-    this._head = node;
-    this._tail = node;
-  } else if (index === 0){
-    this._head.prev = node;
-    node.next = this._head;
-    this._head = node;
+  if (this.size === 0) {
+    this.head = node;
+    this.tail = node;
+  } else if (index === 0) {
+    this.head.prev = node;
+    node.next = this.head;
+    this.head = node;
   } else {
-    this._tail.next = node;
-    node.prev = this._tail;
-    this._tail = node;
+    this.tail.next = node;
+    node.prev = this.tail;
+    this.tail = node;
   }
-  
-  this._length++;
+  this.size += 1;
 };
 
-LinkedList.prototype.remove = function(index){
-  if (index > -1 && index < this._length){
-    var current = this._head, i = 0;
-    
-    if (index === 0){
-      //set new head
-      this._head = current.next;
+LinkedList.prototype.remove = function remove(index) {
+  if (index > -1 && index < this.size) {
+    let current = this.head;
+    let i = 0;
+
+    if (index === 0) {
+      // set new head
+      this.head = current.next;
       // if empty
-      if (!this._head){
+      if (!this.head) {
         // kill the list
-        this._tail = null;
+        this.tail = null;
       } else {
         // remove pointer to removed node
-        this._head.prev = null;
+        this.head.prev = null;
       }
-    } 
-    else if (index === this._length -1){
-      current = this._tail;
+    } else if (index === this.size - 1) {
+      current = this.tail;
       // set tail to 2nd to last element
-      this._tail = current.prev;
+      this.tail = current.prev;
       // remove pointer to last element
-      this._tail.next = null;
-    } 
-    else {
-      while(i++ < index){
+      this.tail.next = null;
+    } else {
+      while (i < index) {
+        i += 1;
         current = current.next;
       }
-      
       current.prev.next = current.next;
-      //current.next.prev = current.prev ???
+      // current.next.prev = current.prev ???
     }
-    
-    this._length--;
-    
+    this.size -= 1;
     return current.data;
-   } else {
-     return null;
-   }
-  
-
+  }
+  return null;
 };
+
 module.exports = LinkedList;

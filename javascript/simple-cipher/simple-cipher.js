@@ -21,7 +21,9 @@ Cipher.prototype.generateOutput = function(input, is_encoding){
   
   for (var i = 0; i < input.length; i++) {
     shift = alpha.indexOf(this.key[i % this.key.length]);
-    val = (is_encoding == true) ? (input[i].charCodeAt() + shift) : (input[i].charCodeAt() - shift);
+    val = (is_encoding == true) 
+      ? (input[i].charCodeAt() + shift) 
+      : (input[i].charCodeAt() - shift);
     charCode = wrap(val);
     output += String.fromCharCode(charCode);
   }

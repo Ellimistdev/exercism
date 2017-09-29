@@ -1,18 +1,17 @@
 function School() {
- this.students = {};
+  this.students = {};
 }
 
-School.prototype.roster = function() {
+School.prototype.roster = function roster() {
   return this.students;
 };
 
-School.prototype.grade = function(grade) {
-  return this.students[grade] || [];
-  
+School.prototype.grade = function grade(value) {
+  return this.students[value] || [];
 };
 
-School.prototype.add = function(name, grade) {
-  var currentClass = this.students[grade] || []; 
+School.prototype.add = function add(name, grade) {
+  const currentClass = this.students[grade] || [];
   currentClass.push(name);
   this.students[grade] = currentClass.sort();
 };

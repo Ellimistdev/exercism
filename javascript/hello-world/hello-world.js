@@ -3,10 +3,9 @@
 // convenience to get you started writing code faster.
 // Make sure to look at hello-world.spec.js--that should give you some hints about what is
 // expected here.
+function HelloWorld() {}
 
-var HelloWorld = function() {};
-
-HelloWorld.prototype.hello = function() {
+HelloWorld.prototype.hello = function hello() {
   return 'Hello, World!';
 };
 
