@@ -17,74 +17,81 @@ describe('List', function () {
   describe('append', function () {
     it('appends two empty lists', function () {
       var emptyList = new List();
-      expect(emptyList.append(emptyList).values).toEqual([]);
+      emptyList.append(emptyList);
+      expect(emptyList.values).toEqual([]);
     });
 
-    xit('appends an empty list to a non-empty list', function () {
+    it('appends an empty list to a non-empty list', function () {
       var emptyList = new List();
       var nonEmptyList = new List([1, 2, 3, 4]);
-      expect(emptyList.append(nonEmptyList).values).toEqual([1, 2, 3, 4]);
+      emptyList.append(nonEmptyList);
+      expect(emptyList.values).toEqual([1, 2, 3, 4]);
     });
 
-    xit('appends two non-empty lists', function () {
+    it('appends two non-empty lists', function () {
       var list1 = new List([1, 2]);
       var list2 = new List([2, 3, 4, 5]);
-      expect(list1.append(list2).values).toEqual([1, 2, 2, 3, 4, 5]);
+      list1.append(list2);
+      expect(list1.values).toEqual([1, 2, 2, 3, 4, 5]);
     });
   });
 
   describe('concat', function () {
-    xit('concatenates an empty list', function () {
+    it('concatenates an empty list', function () {
       var emptyList = new List();
-      expect(emptyList.concat(emptyList).values).toEqual([]);
+      emptyList.concat(emptyList);
+      expect(emptyList.values).toEqual([]);
     });
 
-    xit('concatenates a list of lists', function () {
+    it('concatenates a list of lists', function () {
       var list1 = new List([1, 2]);
       var list2 = new List([3]);
       var list3 = new List([]);
       var list4 = new List([4, 5, 6]);
-      expect(list1
-        .concat(list2)
-        .concat(list3)
-        .concat(list4).values
-      ).toEqual([1, 2, 3, 4, 5, 6]);
+      list1.concat(list2);
+      list1.concat(list3);
+      list1.concat(list4);
+      expect(list1.values).toEqual([1, 2, 3, 4, 5, 6]);
     });
   });
 
   describe('filter', function () {
-    xit('filters an empty list by a function', function () {
+    it('filters an empty list by a function', function () {
       var list = new List();
-      expect(list.filter(isOdd).values).toEqual([]);
+      list.filter(isOdd);
+      expect(list.values).toEqual([]);
     });
 
-    xit('filters a non-empty list by a function', function () {
+    it('filters a non-empty list by a function', function () {
       var list = new List([1, 2, 3, 5]);
-      expect(list.filter(isOdd).values).toEqual([1, 3, 5]);
+      list.filter(isOdd);
+      expect(list.values).toEqual([1, 3, 5]);
     });
   });
 
   describe('length', function () {
-    xit('finds the length of a empty list', function () {
+    it('finds the length of a empty list', function () {
       var list = new List();
       expect(list.length()).toEqual(0);
     });
 
-    xit('finds the length of a non-empty list', function () {
+    it('finds the length of a non-empty list', function () {
       var list = new List([1, 2, 3, 4]);
       expect(list.length()).toEqual(4);
     });
   });
 
   describe('map', function () {
-    xit('maps a function over an empty list', function () {
+    it('maps a function over an empty list', function () {
       var list = new List([]);
-      expect(list.map(plusOne).values).toEqual([]);
+      list.map(plusOne);
+      expect(list.values).toEqual([]);
     });
 
-    xit('maps a function over a non-empty list', function () {
+    it('maps a function over a non-empty list', function () {
       var list = new List([1, 3, 5, 7]);
-      expect(list.map(plusOne).values).toEqual([2, 4, 6, 8]);
+      list.map(plusOne);
+      expect(list.values).toEqual([2, 4, 6, 8]);
     });
   });
 
