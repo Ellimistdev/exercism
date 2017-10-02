@@ -1,48 +1,48 @@
 function SecretHandshake(input) {
-  if (!(/\d/).test(input)){
-   throw Error("Handshake must be a number");
+  if (!(/\d/).test(input)) {
+    throw Error('Handshake must be a number');
   }
-  this._dec = input;
-  this._bin = this.to_bin();
+  this.dec = input;
+  this.bin = this.toBin();
 }
 
-SecretHandshake.prototype.commands = function() {
-  var handshake = [];
-  var commands = this._bin;
-  var reverse = false;
-  
-  while (commands > 0){
-    if (commands - 10000 >= 0){
-      commands -= 10000;
+SecretHandshake.prototype.commands = function commands() {
+  const handshake = [];
+  let sequence = this.bin;
+  let reverse = false;
+
+  while (sequence > 0) {
+    if (sequence - 10000 >= 0) {
+      sequence -= 10000;
       reverse = true;
-    } else if (commands - 1000 >= 0){
-      commands -= 1000;
-      handshake.push("jump");
-    } else if (commands - 100 >= 0){
-      commands -= 100;
-      handshake.push("close your eyes");
-    } else if (commands - 10 >= 0){
-      commands -= 10;
-      handshake.push("double blink");
-    } else if (commands - 1 >= 0){
-      commands -= 1;
-      handshake.push("wink");
+    } else if (sequence - 1000 >= 0) {
+      sequence -= 1000;
+      handshake.push('jump');
+    } else if (sequence - 100 >= 0) {
+      sequence -= 100;
+      handshake.push('close your eyes');
+    } else if (sequence - 10 >= 0) {
+      sequence -= 10;
+      handshake.push('double blink');
+    } else if (sequence - 1 >= 0) {
+      sequence -= 1;
+      handshake.push('wink');
     }
   }
-  if (reverse === false){
+  if (reverse === false) {
     handshake.reverse();
   }
   return handshake;
 };
 
-SecretHandshake.prototype.to_bin = function() {
-  var result = "";
-  var num = this._dec;
-  while (num > 0){
+SecretHandshake.prototype.toBin = function toBin() {
+  let result = '';
+  let num = this.dec;
+  while (num > 0) {
     result += num % 2;
     num = Math.floor(num / 2);
   }
-  return result.split("").reverse().join("");
+  return result.split('').reverse().join('');
 };
 
 module.exports = SecretHandshake;

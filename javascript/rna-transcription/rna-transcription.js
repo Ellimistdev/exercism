@@ -1,30 +1,21 @@
-var DnaTranscriber = function() {
+function DnaTranscriber() {}
 
-};
-
-DnaTranscriber.prototype.toRna = function(dna) {
-    var rna = "";
- 
-    for (var nucleotide of dna) {
-    
-        switch(nucleotide) {
-          case 'G':
-           rna += 'C';
-           break;
-          case 'C':
-           rna += 'G';
-           break;
-          case 'T':
-           rna += 'A';
-           break;
-          case 'A': 
-           rna += 'U';
-           break;
-          default:
-           throw Error('Invalid input');
-        }
+DnaTranscriber.prototype.toRna = function toRna(dna) {
+  let rna = '';
+  const nucleotides = {
+    G: 'C',
+    C: 'G',
+    T: 'A',
+    A: 'U',
+  };
+  Array.from(dna).map((nucleotide) => {
+    if (!nucleotides[nucleotide]) {
+      throw Error('Invalid input');
+    } else {
+      rna += nucleotides[nucleotide];
     }
-    return rna;
+  });
+  return rna;
 };
 
 module.exports = DnaTranscriber;

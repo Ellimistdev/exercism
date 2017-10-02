@@ -1,15 +1,41 @@
-var usedNames = [];
+const usedNames = [];
+
+function ConvertSeed(seed) {
+  const alpha = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  let name = '';
+  let i = 0;
+
+  for (i; i < 2; i += 1) {
+    name += alpha[seed[i]];
+  }
+  for (i; i < seed.length; i += 1) {
+    name += seed[i].toString();
+  }
+  return name;
+}
+
+function GenSeed() {
+  const nameSeed = [];
+  let i = 0;
+  for (i; i < 2; i += 1) {
+    nameSeed.push(Math.floor(Math.random() * 25));
+  }
+  for (i; i < 5; i += 1) {
+    nameSeed.push(Math.floor(Math.random() * 9));
+  }
+  return nameSeed;
+}
 
 function Robot() {
-  this.name;
+  this.name = '';
   this.genName();
 }
 
-Robot.prototype.genName = function() {
-  var seed = GenSeed();
-  var name = ConvertSeed(seed);
-  
-  if (usedNames.includes(name)){
+Robot.prototype.genName = function genName() {
+  const seed = GenSeed();
+  const name = ConvertSeed(seed);
+
+  if (usedNames.includes(name)) {
     this.genName();
   } else {
     usedNames.push(name);
@@ -17,34 +43,8 @@ Robot.prototype.genName = function() {
   }
 };
 
-Robot.prototype.reset = function(){
+Robot.prototype.reset = function reset() {
   this.genName();
 };
-
-function ConvertSeed(seed){
-  var alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  var name = "";
-  var i = 0;
-  
-  for (i; i < 2; i++){
-    name += alpha[seed[i]];
-  }
-  for (i; i < seed.length; i++){
-    name += seed[i].toString();
-  }
-  return name;
-}
-
-function GenSeed(){
-  var nameSeed = [];
-  var i = 0;
-  for (i; i < 2; i++){
-    nameSeed.push(Math.floor(Math.random() * 25));
-  }
-  for (i; i < 5; i++){
-    nameSeed.push(Math.floor(Math.random() * 9));
-  }
-  return nameSeed;
-}
 
 module.exports = Robot;
