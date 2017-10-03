@@ -1,56 +1,67 @@
-function List(values){
-  this.values = values || [];
+class List {
+  constructor(values = []) {
+    this.values = values;
+  }
+
+  append(list) {
+    list.values.forEach((value) => {
+      this.values.push(value);
+    });
+
+    return this;
+  }
+
+  concat(list) {
+    return this.append(list);
+  }
+
+  filter(func) {
+    const filtered = [];
+
+    this.values.forEach((value) => {
+      if (func(value)) {
+        filtered.push(value);
+      }
+    });
+
+    return new List(filtered);
+  }
+
+  length() {
+    return this.values.length;
+  }
+
+  map(func) {
+    this.values.forEach((entry, index) => {
+      this.values[index] = func(entry);
+    });
+
+    return this;
+  }
+
+  foldl(func, accumulator) {
+    let folded = accumulator;
+    this.values.forEach((entry, index) => {
+      folded = func(this.values[index], folded);
+    });
+
+    return folded;
+  }
+
+  foldr(func, accumulator) {
+    return this.reverse().foldl(func, accumulator);
+  }
+
+  reverse() {
+    const reversed = [];
+    const length = this.values.length - 1;
+
+    this.values.forEach((entry, index) => {
+      reversed[index] = this.values[length - index];
+    });
+
+    return new List(reversed);
+  }
 }
-
-List.prototype.append = function append(vals) {
-  (vals.values).map(val => {
-    this.values.push(val);
-  });
-  return this.values;
-};
-
-List.prototype.concat = function concat(list) {
-  this.append(list).sort();
-  return this.values;
-};
-
-List.prototype.filter = function filter(func) {
-  let filtered = [];
-  this.values.forEach(function(value) {
-    if (func(value)){
-      filtered.push(value);
-    }
-  });
-  this.values = filtered;
-};
-
-List.prototype.length = function length() {
-  let length = 0;
-  this.values.forEach(function(entry) {
-    length += 1;
-  });
-  return length;
-};
-
-
-List.prototype.map = function map(func) {
-  let mapped = [];
-  this.values.forEach(function(element) {
-    mapped.push(func(element));
-  });
-  this.values = mapped;
-};
-
-List.prototype.foldl = function foldl(func, val) {
-
-};
-
-List.prototype.foldr = function foldr(func, val) {
-
-};
-
-List.prototype.reverse = function reverse() {
-
-};
 
 module.exports = List;
