@@ -11,7 +11,7 @@ School.prototype.grade = function grade(value) {
 };
 
 School.prototype.add = function add(name, grade) {
-  const currentClass = this.students[grade] || [];
+  const currentClass = this.grade(grade);
   currentClass.push(name);
   this.students[grade] = currentClass.sort();
 };

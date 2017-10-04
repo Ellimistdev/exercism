@@ -1,4 +1,4 @@
-const usedNames = [];
+const usedNames = {};
 
 function ConvertSeed(seed) {
   const alpha = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -18,10 +18,10 @@ function GenSeed() {
   const nameSeed = [];
   let i = 0;
   for (i; i < 2; i += 1) {
-    nameSeed.push(Math.floor(Math.random() * 25));
+    nameSeed.push(Math.floor(Math.random() * 26));
   }
   for (i; i < 5; i += 1) {
-    nameSeed.push(Math.floor(Math.random() * 9));
+    nameSeed.push(Math.floor(Math.random() * 10));
   }
   return nameSeed;
 }
@@ -35,10 +35,10 @@ Robot.prototype.genName = function genName() {
   const seed = GenSeed();
   const name = ConvertSeed(seed);
 
-  if (usedNames.includes(name)) {
+  if (usedNames[name]) {
     this.genName();
   } else {
-    usedNames.push(name);
+    usedNames[name] = true;
     this.name = name;
   }
 };

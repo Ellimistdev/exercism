@@ -24,6 +24,9 @@ WordProblem.prototype.parseProblem = function parseProblem() {
   return operation;
 };
 
+// take the first 3 elements which should be two 
+// numbers and an operator and process the operation
+// remove those elements, then prepend the result
 WordProblem.prototype.answer = function answer() {
   const op = this.operation;
   while (op.length > 1) {
