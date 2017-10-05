@@ -1,6 +1,6 @@
 class Isogram {
   constructor(word) {
-    this.word = word.toLowerCase().replace(/[^é|à|\w]/g, '');
+    this.word = word.toLowerCase().replace(/[^a-zà-ÿ]/g, '');
   }
 
   isIsogram() {
