@@ -1,0 +1,13 @@
+/home/ubuntu/exercism/csharp/leap/bin/Debug/netcoreapp2.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll
+/home/ubuntu/exercism/csharp/leap/bin/Debug/netcoreapp2.0/xunit.runner.utility.netstandard15.dll
+/home/ubuntu/exercism/csharp/leap/bin/Debug/netcoreapp2.0/xunit.runner.reporters.netstandard15.dll
+/home/ubuntu/exercism/csharp/leap/bin/Debug/netcoreapp2.0/Leap.deps.json
+/home/ubuntu/exercism/csharp/leap/bin/Debug/netcoreapp2.0/Leap.runtimeconfig.json
+/home/ubuntu/exercism/csharp/leap/bin/Debug/netcoreapp2.0/Leap.runtimeconfig.dev.json
+/home/ubuntu/exercism/csharp/leap/bin/Debug/netcoreapp2.0/Leap.dll
+/home/ubuntu/exercism/csharp/leap/bin/Debug/netcoreapp2.0/Leap.pdb
+/home/ubuntu/exercism/csharp/leap/obj/Debug/netcoreapp2.0/Leap.csproj.CoreCompileInputs.cache
+/home/ubuntu/exercism/csharp/leap/obj/Debug/netcoreapp2.0/Leap.AssemblyInfoInputs.cache
+/home/ubuntu/exercism/csharp/leap/obj/Debug/netcoreapp2.0/Leap.AssemblyInfo.cs
+/home/ubuntu/exercism/csharp/leap/obj/Debug/netcoreapp2.0/Leap.dll
+/home/ubuntu/exercism/csharp/leap/obj/Debug/netcoreapp2.0/Leap.pdb
