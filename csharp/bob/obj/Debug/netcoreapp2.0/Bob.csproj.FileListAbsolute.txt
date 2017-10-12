@@ -1,0 +1,13 @@
+/home/ubuntu/exercism/csharp/bob/obj/Debug/netcoreapp2.0/Bob.csproj.CoreCompileInputs.cache
+/home/ubuntu/exercism/csharp/bob/obj/Debug/netcoreapp2.0/Bob.AssemblyInfoInputs.cache
+/home/ubuntu/exercism/csharp/bob/obj/Debug/netcoreapp2.0/Bob.AssemblyInfo.cs
+/home/ubuntu/exercism/csharp/bob/bin/Debug/netcoreapp2.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll
+/home/ubuntu/exercism/csharp/bob/bin/Debug/netcoreapp2.0/xunit.runner.utility.netstandard15.dll
+/home/ubuntu/exercism/csharp/bob/bin/Debug/netcoreapp2.0/xunit.runner.reporters.netstandard15.dll
+/home/ubuntu/exercism/csharp/bob/bin/Debug/netcoreapp2.0/Bob.deps.json
+/home/ubuntu/exercism/csharp/bob/bin/Debug/netcoreapp2.0/Bob.runtimeconfig.json
+/home/ubuntu/exercism/csharp/bob/bin/Debug/netcoreapp2.0/Bob.runtimeconfig.dev.json
+/home/ubuntu/exercism/csharp/bob/bin/Debug/netcoreapp2.0/Bob.dll
+/home/ubuntu/exercism/csharp/bob/bin/Debug/netcoreapp2.0/Bob.pdb
+/home/ubuntu/exercism/csharp/bob/obj/Debug/netcoreapp2.0/Bob.dll
+/home/ubuntu/exercism/csharp/bob/obj/Debug/netcoreapp2.0/Bob.pdb
