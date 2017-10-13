@@ -6,13 +6,13 @@ public static class SumOfMultiples
 {
     public static int Sum(IEnumerable<int> multiples, int max)
     {
-        HashSet<int> result =new HashSet<int>();
+        HashSet<int> result = new HashSet<int>();
         
         foreach (int mult in multiples) 
         {
-            for (int i = 1; i < max; i++) 
+            for (int i = mult; i < max; i++) 
             {
-                if ((i % mult == 0) && !result.Contains(i)) 
+                if (i % mult == 0)
                 {
                     result.Add(i); 
                 }
