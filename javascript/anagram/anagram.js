@@ -6,14 +6,14 @@ class Anagram {
   matches(...args) {
     // given [] or series of strings, use an []
     const haystack = args[0] instanceof Array ? args[0] : args;
-    const match = haystack.filter(entry => this.compare(entry, this.needle));
+    const match = haystack.filter(entry => this.compare(entry.toLowerCase(), this.needle));
     // remove entries that match needle
     return match.filter(entry => entry.toLowerCase() !== this.needle);
   }
 
   compare(entry, target) {
     this.target = target.split('').sort();
-    this.entry = entry.toLowerCase().split('').sort();
+    this.entry = entry.split('').sort();
 
     // bail if lengths are !==
     if (this.entry.length !== this.target.length) {
