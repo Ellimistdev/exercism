@@ -1,17 +1,15 @@
 class Array
   def keep
-    kept = []
-    each do |element|
+    return to_enum unless block_given?
+    each_with_object([]) do |element, kept|
       kept << element if yield(element)
     end
-    kept
   end
 
   def discard
-    discarded = []
-    each do |element|
-      discarded << element unless yield(element)
+    return to_enum unless block_given?
+    each_with_object([]) do |element, kept|
+      kept << element unless yield(element)
     end
-    discarded
   end
 end
