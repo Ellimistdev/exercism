@@ -4,32 +4,32 @@ using System.Collections.Generic;
 
 public class NucleotideCount
 {
-    private string sequence;
-    private Dictionary<char, int> counts;
+    private Dictionary<char, int> counts = new Dictionary<char, int>() 
+    {
+        { 'A', 0 },
+        { 'T', 0 },
+        { 'C', 0 },
+        { 'G', 0 }
+    };
     
     public NucleotideCount(string sequence)
     {
-        this.sequence = sequence;
-        this.counts = new Dictionary<char, int>() 
+        if (sequence == null || sequence.Any(c => !this.counts.ContainsKey(c))) 
         {
-            { 'A', 0 },
-            { 'T', 0 },
-            { 'C', 0 },
-            { 'G', 0 }
-        };
+            throw new InvalidNucleotideException();        
+        }
         
-        if (this.sequence.Any(c => !this.counts.ContainsKey(c))){
-            throw new InvalidNucleotideException();
+        foreach (char nucleotide in counts.Keys.ToArray()) 
+        {
+           counts[nucleotide] =
+                sequence.Length - sequence.Replace(nucleotide.ToString(), "").Length;
         }
     }
 
     public IDictionary<char, int> NucleotideCounts
     {
-        get {
-            foreach (char nucleotide in counts.Keys.ToArray()) {
-                counts[nucleotide] = 
-                    sequence.Length - sequence.Replace(nucleotide.ToString(), "").Length;
-            }
+        get 
+        {
             return counts;
         }
     }
