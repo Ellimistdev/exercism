@@ -1,8 +1,8 @@
 class ETL {
   transform(old) {
-    let newData = {};
+    const newData = {};
     for (const [score, letters] of Object.entries(old)) {
-      letters.forEach(function(letter) {
+      letters.forEach((letter) => {
         newData[letter.toLowerCase()] = Number(score);
       });
     }
