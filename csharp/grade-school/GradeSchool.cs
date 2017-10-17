@@ -1,34 +1,41 @@
 using System;
-using System.Collections.Generic;
 using System.Linq;
+using System.Collections.Generic;
 
 public class School
 {
-    private Dictionary<int, List<string>> roster = 
-        new Dictionary<int, List<string>> ();
+    private List<Student> roster = new List<Student> ();
     
     public void Add(string student, int grade)
     {
-        List<string> currentClass = 
-            roster.ContainsKey(grade) ?
-            roster[grade] :
-            new List<string>();
-            
-        currentClass.Add(student);
-        roster[grade] = currentClass;    
+        roster.Add(new Student(student, grade));
     }
 
     public IEnumerable<string> Roster()
     {
-        return roster.Values.SelectMany(x => x);
+        return roster
+            .OrderBy(_ => _.Grade)
+            .ThenBy(_ => _.Name)
+            .Select(_ => _.Name);
     }
 
     public IEnumerable<string> Grade(int grade)
     {
-        var currentClass = roster[grade];
-        
-        currentClass.Sort();
-        
-        return currentClass.ToArray();
+        return roster
+            .Where(_ => _.Grade == grade)
+            .OrderBy(_ => _.Name)
+            .Select(_ => _.Name);
     }
+}
+
+public class Student 
+{
+    public Student(string name, int grade)
+    {
+        Name = name;
+        Grade = grade;
+    }
+    
+    public string Name { get; }
+    public int Grade { get; }
 }
