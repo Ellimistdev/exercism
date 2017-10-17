@@ -1,13 +1,23 @@
 class FoodChain {
   constructor() {
     this.animals = ['fly', 'spider', 'bird', 'cat', 'dog', 'goat', 'cow', 'horse'];
+    this.lineTwo = {
+      0: '',
+      1: '\nIt wriggled and jiggled and tickled inside her.',
+      2: '\nHow absurd to swallow a bird!',
+      3: '\nImagine that, to swallow a cat!',
+      4: '\nWhat a hog, to swallow a dog!',
+      5: '\nJust opened her throat and swallowed a goat!',
+      6: "\nI don't know how she swallowed a cow!",
+      7: '',
+    };
   }
 
   verse(input) {
     const num = input - 1;
 
     return `${this.lineOne(num)}` +
-           `${this.lineTwo(num)}` +
+           `${this.lineTwo[num]}` +
            `${this.cumulativeLine(num)}` +
            `${this.finalLine(num)}\n`;
   }
@@ -26,25 +36,6 @@ class FoodChain {
 
   lineOne(num) {
     return `I know an old lady who swallowed a ${this.animals[num]}.`;
-  }
-
-  lineTwo(num) {
-    switch (num) {
-      case 1:
-        return '\nIt wriggled and jiggled and tickled inside her.';
-      case 2:
-        return '\nHow absurd to swallow a bird!';
-      case 3:
-        return '\nImagine that, to swallow a cat!';
-      case 4:
-        return '\nWhat a hog, to swallow a dog!';
-      case 5:
-        return '\nJust opened her throat and swallowed a goat!';
-      case 6:
-        return "\nI don't know how she swallowed a cow!";
-      default:
-        return '';
-    }
   }
 
   cumulativeLine(num) {
