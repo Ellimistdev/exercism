@@ -14,7 +14,7 @@ public static class CollatzConjecture
         
         while (value > 1) 
         {
-            if (value.isEven())
+            if (value.IsEven())
             {
                 value /= 2;
             } 
@@ -28,9 +28,9 @@ public static class CollatzConjecture
     }
 }
 
-public static class Integer
+public static class IntExtensions
 {
-    public static bool isEven(this int number)
+    public static bool IsEven(this int number)
     {
         return number % 2 == 0;
     }
