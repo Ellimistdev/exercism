@@ -32,10 +32,6 @@ public static class Integer
 {
     public static bool isEven(this int number)
     {
-        if (number % 2 == 0) 
-        {
-            return true;
-        }
-        return false;
+        return number % 2 == 0;
     }
 }
