@@ -13,7 +13,14 @@ public enum Plant
 public class KindergartenGarden
 {    
     public Dictionary<string, List<Plant>> _students = new Dictionary<string, List<Plant>>();
-    
+    public Dictionary<char, Plant>	_plantMap = new Dictionary<char, Plant>()
+    {
+        { 'V', Plant.Violets },
+    	{ 'R', Plant.Radishes },
+    	{ 'C', Plant.Clover },
+    	{ 'G', Plant.Grass }
+    };
+
     public KindergartenGarden(string diagram)
     {
         List<string> students = new List<string>
@@ -63,9 +70,10 @@ public class KindergartenGarden
         {
             int studentID = 0;
             int count = 0;
+            
             foreach (char plant in row)
             {
-                _students[roster[studentID]].Add(MatchPlant(plant));
+                _students[roster[studentID]].Add(_plantMap[Char.ToUpper(plant)]);
                 count += 1;
                 
                 if (count == 2)
@@ -74,23 +82,6 @@ public class KindergartenGarden
                     studentID += 1;
                 }
             }
-        }
-    }
-    
-    private Plant MatchPlant(char sym)
-    {
-        switch(char.ToLower(sym)) 
-        {
-            case 'v':
-                return Plant.Violets;
-            case 'r':
-                return Plant.Radishes;
-            case 'c':
-                return Plant.Clover;
-            case 'g':
-                return Plant.Grass;
-            default:
-                throw new ArgumentException();
         }
     }
 }
