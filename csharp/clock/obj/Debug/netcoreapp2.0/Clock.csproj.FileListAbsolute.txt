@@ -1,0 +1,13 @@
+/home/ubuntu/exercism/csharp/clock/obj/Debug/netcoreapp2.0/Clock.csproj.CoreCompileInputs.cache
+/home/ubuntu/exercism/csharp/clock/obj/Debug/netcoreapp2.0/Clock.AssemblyInfoInputs.cache
+/home/ubuntu/exercism/csharp/clock/obj/Debug/netcoreapp2.0/Clock.AssemblyInfo.cs
+/home/ubuntu/exercism/csharp/clock/bin/Debug/netcoreapp2.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll
+/home/ubuntu/exercism/csharp/clock/bin/Debug/netcoreapp2.0/xunit.runner.reporters.netcoreapp10.dll
+/home/ubuntu/exercism/csharp/clock/bin/Debug/netcoreapp2.0/xunit.runner.utility.netcoreapp10.dll
+/home/ubuntu/exercism/csharp/clock/bin/Debug/netcoreapp2.0/Clock.deps.json
+/home/ubuntu/exercism/csharp/clock/bin/Debug/netcoreapp2.0/Clock.runtimeconfig.json
+/home/ubuntu/exercism/csharp/clock/bin/Debug/netcoreapp2.0/Clock.runtimeconfig.dev.json
+/home/ubuntu/exercism/csharp/clock/bin/Debug/netcoreapp2.0/Clock.dll
+/home/ubuntu/exercism/csharp/clock/bin/Debug/netcoreapp2.0/Clock.pdb
+/home/ubuntu/exercism/csharp/clock/obj/Debug/netcoreapp2.0/Clock.dll
+/home/ubuntu/exercism/csharp/clock/obj/Debug/netcoreapp2.0/Clock.pdb
