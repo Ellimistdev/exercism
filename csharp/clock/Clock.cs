@@ -2,12 +2,10 @@ using System;
 
 public struct Clock
 {
-    private int _hours;
     private int _minutes;
     public Clock(int hours, int minutes)
     {
-        _hours = hours + (minutes / 60);
-        _minutes = minutes % 60;
+        _minutes = hours * 60 + minutes;
         Clean();
     }
 
@@ -15,7 +13,7 @@ public struct Clock
     {
         get
         {
-            return _hours;
+            return _minutes / 60;
         }
     }
 
@@ -23,46 +21,29 @@ public struct Clock
     {
         get
         {
-            return _minutes;
+            return _minutes % 60;
         }
     }
 
     public Clock Add(int minutesToAdd)
     {
-        if (minutesToAdd < 0)
-        {
-            return Subtract(Math.Abs(minutesToAdd));
-        }
         _minutes += minutesToAdd;
-        
         return Clean();
     }
 
     public Clock Subtract(int minutesToSubtract)
     {
-        _minutes -= minutesToSubtract;
-        
-        return Clean();
+        return Add(minutesToSubtract);
     }
     
     public Clock Clean()
     {
-        while (_minutes < 0)
-        {
-            _hours -= 1;
-            _minutes += 60;
-        }
-        while (_minutes > 60)
-        {
-            _hours += 1;
-            _minutes -= 60;
-        }
-        while (_hours < 0) 
-        {
-            _hours += 24;
-        }
-        _hours = _hours % 24;
+        _minutes %= 24 * 60;
         
+        if (_minutes < 0)
+        {
+            _minutes += 24 * 60;
+        }
         return this;
     }
 
