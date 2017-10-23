@@ -1,0 +1,13 @@
+/home/ubuntu/exercism/csharp/binary-search/obj/Debug/netcoreapp2.0/BinarySearch.csproj.CoreCompileInputs.cache
+/home/ubuntu/exercism/csharp/binary-search/obj/Debug/netcoreapp2.0/BinarySearch.AssemblyInfoInputs.cache
+/home/ubuntu/exercism/csharp/binary-search/obj/Debug/netcoreapp2.0/BinarySearch.AssemblyInfo.cs
+/home/ubuntu/exercism/csharp/binary-search/bin/Debug/netcoreapp2.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll
+/home/ubuntu/exercism/csharp/binary-search/bin/Debug/netcoreapp2.0/xunit.runner.reporters.netcoreapp10.dll
+/home/ubuntu/exercism/csharp/binary-search/bin/Debug/netcoreapp2.0/xunit.runner.utility.netcoreapp10.dll
+/home/ubuntu/exercism/csharp/binary-search/bin/Debug/netcoreapp2.0/BinarySearch.deps.json
+/home/ubuntu/exercism/csharp/binary-search/bin/Debug/netcoreapp2.0/BinarySearch.runtimeconfig.json
+/home/ubuntu/exercism/csharp/binary-search/bin/Debug/netcoreapp2.0/BinarySearch.runtimeconfig.dev.json
+/home/ubuntu/exercism/csharp/binary-search/bin/Debug/netcoreapp2.0/BinarySearch.dll
+/home/ubuntu/exercism/csharp/binary-search/bin/Debug/netcoreapp2.0/BinarySearch.pdb
+/home/ubuntu/exercism/csharp/binary-search/obj/Debug/netcoreapp2.0/BinarySearch.dll
+/home/ubuntu/exercism/csharp/binary-search/obj/Debug/netcoreapp2.0/BinarySearch.pdb
