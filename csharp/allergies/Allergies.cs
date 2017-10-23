@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using System.Collections.Generic;
 
 public class Allergies
@@ -20,13 +21,10 @@ public class Allergies
     {
         byte allergySeed = (byte)mask;
         
-        foreach (byte allergy in _allergies.Keys)
-        {
-            if ((allergySeed & allergy) == allergy)
-            {
-                allergies.Add(_allergies[allergy]);
-            }
-        }
+        allergies = _allergies
+            .Where(allergy => ((allergySeed & allergy.Key) == allergy.Key))
+            .Select(allergen => allergen.Value)
+            .ToList();
     }
 
     public bool IsAllergicTo(string allergy)
