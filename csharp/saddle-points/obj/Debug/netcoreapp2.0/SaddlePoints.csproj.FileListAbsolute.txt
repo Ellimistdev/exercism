@@ -1,0 +1,13 @@
+/home/ubuntu/exercism/csharp/saddle-points/obj/Debug/netcoreapp2.0/SaddlePoints.csproj.CoreCompileInputs.cache
+/home/ubuntu/exercism/csharp/saddle-points/obj/Debug/netcoreapp2.0/SaddlePoints.AssemblyInfoInputs.cache
+/home/ubuntu/exercism/csharp/saddle-points/obj/Debug/netcoreapp2.0/SaddlePoints.AssemblyInfo.cs
+/home/ubuntu/exercism/csharp/saddle-points/bin/Debug/netcoreapp2.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll
+/home/ubuntu/exercism/csharp/saddle-points/bin/Debug/netcoreapp2.0/xunit.runner.reporters.netcoreapp10.dll
+/home/ubuntu/exercism/csharp/saddle-points/bin/Debug/netcoreapp2.0/xunit.runner.utility.netcoreapp10.dll
+/home/ubuntu/exercism/csharp/saddle-points/bin/Debug/netcoreapp2.0/SaddlePoints.deps.json
+/home/ubuntu/exercism/csharp/saddle-points/bin/Debug/netcoreapp2.0/SaddlePoints.runtimeconfig.json
+/home/ubuntu/exercism/csharp/saddle-points/bin/Debug/netcoreapp2.0/SaddlePoints.runtimeconfig.dev.json
+/home/ubuntu/exercism/csharp/saddle-points/bin/Debug/netcoreapp2.0/SaddlePoints.dll
+/home/ubuntu/exercism/csharp/saddle-points/bin/Debug/netcoreapp2.0/SaddlePoints.pdb
+/home/ubuntu/exercism/csharp/saddle-points/obj/Debug/netcoreapp2.0/SaddlePoints.dll
+/home/ubuntu/exercism/csharp/saddle-points/obj/Debug/netcoreapp2.0/SaddlePoints.pdb
