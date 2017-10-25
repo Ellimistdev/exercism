@@ -1,7 +1,6 @@
 using System;
 using System.Text.RegularExpressions;
 
-// Ordered methods in the sequence they are called.
 public static class Markdown
 {
     private static int _liCount; // extract list check that's being passed around
@@ -30,23 +29,12 @@ public static class Markdown
         return result; // moved <ul> tag assignment to ParseLineItem()
     }
 
-    // combine null checks
-    private static string ParseLine(string markdown)
-    {
-        return ParseHeader(markdown) ??
-               ParseLineItem(markdown) ??
-               ParseText(markdown) ??
-               throw new ArgumentException("Invalid markdown"); //Replaced ParseParagraph() with ParseText
-    }
-
     private static string ParseHeader(string markdown)
     {
         var count = Regex.Match(markdown, @"#+").Length; // get '#' count via regex
 
-        return count == 0 ? null : Wrap(markdown.Substring(count + 1), "h" + count); // switched to ternary
+        return count == 0 ? null : Wrap(markdown.Substring(count + 1), $"h{count}"); // switched to ternary
     }
-
-    private static string Wrap(string text, string tag) => "<" + tag + ">" + text + "</" + tag + ">";
 
     private static string ParseLineItem(string markdown)
     {
@@ -56,11 +44,11 @@ public static class Markdown
             _liCount--;
 
             if(_liCount == _liMax - 1)
-                return "<ul>" + innerHtml;
+                return $"<ul>{innerHtml}";
             if(_liCount > 0)
                 return innerHtml;
 
-            return innerHtml + "</ul>";
+            return $"{innerHtml}</ul>";
         }
 
         return null;
@@ -73,15 +61,15 @@ public static class Markdown
         return list ? parsedText : Wrap(parsedText, "p"); // switched to ternary
     }
 
+    private static string Wrap(string text, string tag) => "<" + tag + ">" + text + "</" + tag + ">";
     private static string Parse__(string markdown) => Parse(markdown, "__", "strong");
     private static string Parse_(string markdown) => Parse(markdown, "_", "em");
-
-    private static string Parse(string markdown, string delimiter, string tag)
-    {
-        var pattern = delimiter + "(.+)" + delimiter;
-        var replacement = "<" + tag + ">$1</" + tag + ">";
-
-        return Regex.Replace(markdown, pattern, replacement);
-    }
+    private static string Parse(string markdown, string delimiter, string tag) 
+        => Regex.Replace(markdown, delimiter + "(.+)" + delimiter, Wrap("$1", tag));
+    private static string ParseLine(string markdown)
+        => ParseHeader(markdown)
+        ?? ParseLineItem(markdown)
+        ?? ParseText(markdown)
+        ?? throw new ArgumentException("Invalid markdown"); //Replaced ParseParagraph() with ParseText
     // removed unused methods ParseParagraph() and IsTag()
 }
