@@ -1,0 +1,13 @@
+/home/ubuntu/exercism/csharp/book-store/bin/Debug/netcoreapp2.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll
+/home/ubuntu/exercism/csharp/book-store/bin/Debug/netcoreapp2.0/xunit.runner.reporters.netcoreapp10.dll
+/home/ubuntu/exercism/csharp/book-store/bin/Debug/netcoreapp2.0/xunit.runner.utility.netcoreapp10.dll
+/home/ubuntu/exercism/csharp/book-store/bin/Debug/netcoreapp2.0/BookStore.deps.json
+/home/ubuntu/exercism/csharp/book-store/bin/Debug/netcoreapp2.0/BookStore.runtimeconfig.json
+/home/ubuntu/exercism/csharp/book-store/bin/Debug/netcoreapp2.0/BookStore.runtimeconfig.dev.json
+/home/ubuntu/exercism/csharp/book-store/bin/Debug/netcoreapp2.0/BookStore.dll
+/home/ubuntu/exercism/csharp/book-store/bin/Debug/netcoreapp2.0/BookStore.pdb
+/home/ubuntu/exercism/csharp/book-store/obj/Debug/netcoreapp2.0/BookStore.csproj.CoreCompileInputs.cache
+/home/ubuntu/exercism/csharp/book-store/obj/Debug/netcoreapp2.0/BookStore.AssemblyInfoInputs.cache
+/home/ubuntu/exercism/csharp/book-store/obj/Debug/netcoreapp2.0/BookStore.AssemblyInfo.cs
+/home/ubuntu/exercism/csharp/book-store/obj/Debug/netcoreapp2.0/BookStore.dll
+/home/ubuntu/exercism/csharp/book-store/obj/Debug/netcoreapp2.0/BookStore.pdb
