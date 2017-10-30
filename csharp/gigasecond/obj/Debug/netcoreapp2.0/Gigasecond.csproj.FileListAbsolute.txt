@@ -1,0 +1,13 @@
+/home/ubuntu/exercism/csharp/gigasecond/obj/Debug/netcoreapp2.0/Gigasecond.csproj.CoreCompileInputs.cache
+/home/ubuntu/exercism/csharp/gigasecond/obj/Debug/netcoreapp2.0/Gigasecond.AssemblyInfoInputs.cache
+/home/ubuntu/exercism/csharp/gigasecond/obj/Debug/netcoreapp2.0/Gigasecond.AssemblyInfo.cs
+/home/ubuntu/exercism/csharp/gigasecond/bin/Debug/netcoreapp2.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll
+/home/ubuntu/exercism/csharp/gigasecond/bin/Debug/netcoreapp2.0/xunit.runner.reporters.netcoreapp10.dll
+/home/ubuntu/exercism/csharp/gigasecond/bin/Debug/netcoreapp2.0/xunit.runner.utility.netcoreapp10.dll
+/home/ubuntu/exercism/csharp/gigasecond/bin/Debug/netcoreapp2.0/Gigasecond.deps.json
+/home/ubuntu/exercism/csharp/gigasecond/bin/Debug/netcoreapp2.0/Gigasecond.runtimeconfig.json
+/home/ubuntu/exercism/csharp/gigasecond/bin/Debug/netcoreapp2.0/Gigasecond.runtimeconfig.dev.json
+/home/ubuntu/exercism/csharp/gigasecond/bin/Debug/netcoreapp2.0/Gigasecond.dll
+/home/ubuntu/exercism/csharp/gigasecond/bin/Debug/netcoreapp2.0/Gigasecond.pdb
+/home/ubuntu/exercism/csharp/gigasecond/obj/Debug/netcoreapp2.0/Gigasecond.dll
+/home/ubuntu/exercism/csharp/gigasecond/obj/Debug/netcoreapp2.0/Gigasecond.pdb
