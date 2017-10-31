@@ -14,7 +14,6 @@ public static class Grains
         return (ulong)Math.Pow(2, n - 1);
     }
 
-    public static ulong Total()
-        => (ulong)_squares
-            .Aggregate(0, (total, next) => total + (int)Square(next));
+    public static ulong Total() => _squares
+            .Aggregate(0UL, (total, next) => total + Square(next));
 }
