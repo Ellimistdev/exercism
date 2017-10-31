@@ -1,0 +1,13 @@
+/home/ubuntu/exercism/csharp/grains/obj/Debug/netcoreapp2.0/Grains.csproj.CoreCompileInputs.cache
+/home/ubuntu/exercism/csharp/grains/obj/Debug/netcoreapp2.0/Grains.AssemblyInfoInputs.cache
+/home/ubuntu/exercism/csharp/grains/obj/Debug/netcoreapp2.0/Grains.AssemblyInfo.cs
+/home/ubuntu/exercism/csharp/grains/bin/Debug/netcoreapp2.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll
+/home/ubuntu/exercism/csharp/grains/bin/Debug/netcoreapp2.0/xunit.runner.reporters.netcoreapp10.dll
+/home/ubuntu/exercism/csharp/grains/bin/Debug/netcoreapp2.0/xunit.runner.utility.netcoreapp10.dll
+/home/ubuntu/exercism/csharp/grains/bin/Debug/netcoreapp2.0/Grains.deps.json
+/home/ubuntu/exercism/csharp/grains/bin/Debug/netcoreapp2.0/Grains.runtimeconfig.json
+/home/ubuntu/exercism/csharp/grains/bin/Debug/netcoreapp2.0/Grains.runtimeconfig.dev.json
+/home/ubuntu/exercism/csharp/grains/bin/Debug/netcoreapp2.0/Grains.dll
+/home/ubuntu/exercism/csharp/grains/bin/Debug/netcoreapp2.0/Grains.pdb
+/home/ubuntu/exercism/csharp/grains/obj/Debug/netcoreapp2.0/Grains.dll
+/home/ubuntu/exercism/csharp/grains/obj/Debug/netcoreapp2.0/Grains.pdb
