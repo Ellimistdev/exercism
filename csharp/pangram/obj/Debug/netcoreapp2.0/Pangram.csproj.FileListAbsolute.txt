@@ -1,0 +1,13 @@
+/home/ubuntu/exercism/csharp/pangram/obj/Debug/netcoreapp2.0/Pangram.csproj.CoreCompileInputs.cache
+/home/ubuntu/exercism/csharp/pangram/obj/Debug/netcoreapp2.0/Pangram.AssemblyInfoInputs.cache
+/home/ubuntu/exercism/csharp/pangram/obj/Debug/netcoreapp2.0/Pangram.AssemblyInfo.cs
+/home/ubuntu/exercism/csharp/pangram/bin/Debug/netcoreapp2.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll
+/home/ubuntu/exercism/csharp/pangram/bin/Debug/netcoreapp2.0/xunit.runner.reporters.netcoreapp10.dll
+/home/ubuntu/exercism/csharp/pangram/bin/Debug/netcoreapp2.0/xunit.runner.utility.netcoreapp10.dll
+/home/ubuntu/exercism/csharp/pangram/bin/Debug/netcoreapp2.0/Pangram.deps.json
+/home/ubuntu/exercism/csharp/pangram/bin/Debug/netcoreapp2.0/Pangram.runtimeconfig.json
+/home/ubuntu/exercism/csharp/pangram/bin/Debug/netcoreapp2.0/Pangram.runtimeconfig.dev.json
+/home/ubuntu/exercism/csharp/pangram/bin/Debug/netcoreapp2.0/Pangram.dll
+/home/ubuntu/exercism/csharp/pangram/bin/Debug/netcoreapp2.0/Pangram.pdb
+/home/ubuntu/exercism/csharp/pangram/obj/Debug/netcoreapp2.0/Pangram.dll
+/home/ubuntu/exercism/csharp/pangram/obj/Debug/netcoreapp2.0/Pangram.pdb
