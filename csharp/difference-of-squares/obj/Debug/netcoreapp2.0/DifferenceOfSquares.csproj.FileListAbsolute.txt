@@ -1,0 +1,13 @@
+/home/ubuntu/exercism/csharp/difference-of-squares/obj/Debug/netcoreapp2.0/DifferenceOfSquares.csproj.CoreCompileInputs.cache
+/home/ubuntu/exercism/csharp/difference-of-squares/obj/Debug/netcoreapp2.0/DifferenceOfSquares.AssemblyInfoInputs.cache
+/home/ubuntu/exercism/csharp/difference-of-squares/obj/Debug/netcoreapp2.0/DifferenceOfSquares.AssemblyInfo.cs
+/home/ubuntu/exercism/csharp/difference-of-squares/bin/Debug/netcoreapp2.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll
+/home/ubuntu/exercism/csharp/difference-of-squares/bin/Debug/netcoreapp2.0/xunit.runner.reporters.netcoreapp10.dll
+/home/ubuntu/exercism/csharp/difference-of-squares/bin/Debug/netcoreapp2.0/xunit.runner.utility.netcoreapp10.dll
+/home/ubuntu/exercism/csharp/difference-of-squares/bin/Debug/netcoreapp2.0/DifferenceOfSquares.deps.json
+/home/ubuntu/exercism/csharp/difference-of-squares/bin/Debug/netcoreapp2.0/DifferenceOfSquares.runtimeconfig.json
+/home/ubuntu/exercism/csharp/difference-of-squares/bin/Debug/netcoreapp2.0/DifferenceOfSquares.runtimeconfig.dev.json
+/home/ubuntu/exercism/csharp/difference-of-squares/bin/Debug/netcoreapp2.0/DifferenceOfSquares.dll
+/home/ubuntu/exercism/csharp/difference-of-squares/bin/Debug/netcoreapp2.0/DifferenceOfSquares.pdb
+/home/ubuntu/exercism/csharp/difference-of-squares/obj/Debug/netcoreapp2.0/DifferenceOfSquares.dll
+/home/ubuntu/exercism/csharp/difference-of-squares/obj/Debug/netcoreapp2.0/DifferenceOfSquares.pdb
