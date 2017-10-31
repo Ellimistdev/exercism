@@ -1,0 +1,13 @@
+/home/ubuntu/exercism/csharp/etl/bin/Debug/netcoreapp2.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll
+/home/ubuntu/exercism/csharp/etl/bin/Debug/netcoreapp2.0/xunit.runner.reporters.netcoreapp10.dll
+/home/ubuntu/exercism/csharp/etl/bin/Debug/netcoreapp2.0/xunit.runner.utility.netcoreapp10.dll
+/home/ubuntu/exercism/csharp/etl/bin/Debug/netcoreapp2.0/Etl.deps.json
+/home/ubuntu/exercism/csharp/etl/bin/Debug/netcoreapp2.0/Etl.runtimeconfig.json
+/home/ubuntu/exercism/csharp/etl/bin/Debug/netcoreapp2.0/Etl.runtimeconfig.dev.json
+/home/ubuntu/exercism/csharp/etl/bin/Debug/netcoreapp2.0/Etl.dll
+/home/ubuntu/exercism/csharp/etl/bin/Debug/netcoreapp2.0/Etl.pdb
+/home/ubuntu/exercism/csharp/etl/obj/Debug/netcoreapp2.0/Etl.csproj.CoreCompileInputs.cache
+/home/ubuntu/exercism/csharp/etl/obj/Debug/netcoreapp2.0/Etl.AssemblyInfoInputs.cache
+/home/ubuntu/exercism/csharp/etl/obj/Debug/netcoreapp2.0/Etl.AssemblyInfo.cs
+/home/ubuntu/exercism/csharp/etl/obj/Debug/netcoreapp2.0/Etl.dll
+/home/ubuntu/exercism/csharp/etl/obj/Debug/netcoreapp2.0/Etl.pdb
