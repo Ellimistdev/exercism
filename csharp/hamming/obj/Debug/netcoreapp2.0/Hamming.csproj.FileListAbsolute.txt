@@ -1,0 +1,13 @@
+/home/ubuntu/exercism/csharp/hamming/obj/Debug/netcoreapp2.0/Hamming.csproj.CoreCompileInputs.cache
+/home/ubuntu/exercism/csharp/hamming/obj/Debug/netcoreapp2.0/Hamming.AssemblyInfoInputs.cache
+/home/ubuntu/exercism/csharp/hamming/obj/Debug/netcoreapp2.0/Hamming.AssemblyInfo.cs
+/home/ubuntu/exercism/csharp/hamming/bin/Debug/netcoreapp2.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll
+/home/ubuntu/exercism/csharp/hamming/bin/Debug/netcoreapp2.0/xunit.runner.reporters.netcoreapp10.dll
+/home/ubuntu/exercism/csharp/hamming/bin/Debug/netcoreapp2.0/xunit.runner.utility.netcoreapp10.dll
+/home/ubuntu/exercism/csharp/hamming/bin/Debug/netcoreapp2.0/Hamming.deps.json
+/home/ubuntu/exercism/csharp/hamming/bin/Debug/netcoreapp2.0/Hamming.runtimeconfig.json
+/home/ubuntu/exercism/csharp/hamming/bin/Debug/netcoreapp2.0/Hamming.runtimeconfig.dev.json
+/home/ubuntu/exercism/csharp/hamming/bin/Debug/netcoreapp2.0/Hamming.dll
+/home/ubuntu/exercism/csharp/hamming/bin/Debug/netcoreapp2.0/Hamming.pdb
+/home/ubuntu/exercism/csharp/hamming/obj/Debug/netcoreapp2.0/Hamming.dll
+/home/ubuntu/exercism/csharp/hamming/obj/Debug/netcoreapp2.0/Hamming.pdb
