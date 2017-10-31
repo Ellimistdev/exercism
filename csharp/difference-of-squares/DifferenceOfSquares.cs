@@ -4,11 +4,16 @@ using System.Linq;
 public static class DifferenceOfSquares
 {
     public static int CalculateSquareOfSum(int max) =>
-        (int)Math.Pow(Enumerable.Range(1, max).Sum(), 2);
+        Enumerable.Range(1, max).Sum().Square();
 
     public static int CalculateSumOfSquares(int max) =>
-        (int)Enumerable.Range(1, max).Select(i => Math.Pow(i, 2)).Sum();
+        Enumerable.Range(1, max).Select(IntExtensions.Square).Sum();
 
     public static int CalculateDifferenceOfSquares(int max) =>
         CalculateSquareOfSum(max) - CalculateSumOfSquares(max);
+}
+
+public static class IntExtensions
+{
+    public static int Square(this int n) => n * n;
 }
