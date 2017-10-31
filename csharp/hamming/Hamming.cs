@@ -10,7 +10,7 @@ public static class Hamming
             throw new ArgumentException();
         }
         return firstStrand
-            .Where((alpha, index) => firstStrand[index] != secondStrand[index])
-            .Count();;  
+            .Where((nucleotide, index) => nucleotide != secondStrand[index])
+            .Count();
     }
 }
