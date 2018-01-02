@@ -1,6 +1,6 @@
-var TwoFer = function () {};
+const TwoFer = function TwoFer() {};
 
-TwoFer.prototype.twoFer = function (who = 'you') {
+TwoFer.prototype.twoFer = function twoFer(who = 'you') {
   return `One for ${who}, one for me.`;
 };
 
